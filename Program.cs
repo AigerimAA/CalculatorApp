@@ -15,7 +15,7 @@
             char op = Console.ReadLine()[0];
 
             double result = op == '+' ? a + b : a * b;
-            Console.WriteLine($"Result: {result}");
+            Console.WriteLine($"Result of operation: {result}");
         }
     }
 }
