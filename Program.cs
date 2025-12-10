@@ -11,7 +11,11 @@
             Console.WriteLine("Insert the second number: ");
             double b = double.Parse(Console.ReadLine()!);
 
-            Console.WriteLine($"Result of addition: {a + b}");
+            Console.WriteLine("Choose an operation (+ or  *): ");
+            char op = Console.ReadLine()[0];
+
+            double result = op == '+' ? a + b : a * b;
+            Console.WriteLine($"Result of operation: {result}");
         }
     }
 }
